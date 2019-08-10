@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/scrollable"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/descDetail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/deskripsi"
+      android:textSize="@dimen/textMedium2"
+      android:textStyle="bold"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/t_notelp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/marginSmall"
+      android:text="@string/notelp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/descDetail" />
+
+    <TextView
+      android:id="@+id/t_email"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/email"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_notelp" />
+
+    <TextView
+      android:id="@+id/t_birthdate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/birthdate"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_email" />
+
+    <TextView
+      android:id="@+id/t_since"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/since"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_jabatan" />
+
+    <TextView
+      android:id="@+id/t_jabatan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/jabatan"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_birthdate" />
+
+    <TextView
+      android:id="@+id/t_company"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/company"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_since" />
+
+    <TextView
+      android:id="@+id/t_atasan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/atasan"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_company" />
+
+    <TextView
+      android:id="@+id/t_bawahan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      android:text="@string/bawahan"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/t_atasan" />
+
+    <TextView
+      android:id="@+id/notelp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/marginSmall"
+      app:layout_constraintTop_toBottomOf="@+id/descDetail"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2" />
+
+    <TextView
+      android:id="@+id/email"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintTop_toBottomOf="@+id/notelp"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2" />
+
+    <TextView
+      android:id="@+id/birthdate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2"
+      app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+      android:id="@+id/jabatan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintTop_toBottomOf="@+id/birthdate"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2"/>
+
+    <TextView
+      android:id="@+id/since"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintTop_toBottomOf="@+id/jabatan"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2" />
+
+    <TextView
+      android:id="@+id/company"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintTop_toBottomOf="@+id/since"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2" />
+
+    <TextView
+      android:id="@+id/atasan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintTop_toBottomOf="@+id/company"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2" />
+
+    <TextView
+      android:id="@+id/bawahan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/paddingSmall"
+      app:layout_constraintTop_toBottomOf="@+id/t_atasan"
+      app:layout_constraintLeft_toRightOf="@+id/barrier2"/>
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/barrier2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="right"
+      app:constraint_referenced_ids="t_notelp,t_email,t_birthdate,t_since,t_jabatan,t_company,t_bawahan,t_atasan"
+      tools:layout_editor_absoluteX="411dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".view.home.HomeFragment">
+
+  <include layout="@layout/layout_toolbar"/>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <View
+      android:id="@+id/b1"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:background="@xml/bg_shape1"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+      app:layout_constraintTop_toTopOf="@+id/b1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardUseCompatPadding="true"
+      app:cardElevation="@dimen/paddingSmall"
+      app:cardCornerRadius="@dimen/paddingSmall">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingSmall">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/marginMedium"
+          android:drawableStart="@drawable/ic_person"
+          android:text="Frequently Used"
+          android:textSize="@dimen/textMedium2"
+          android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rMenu"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
